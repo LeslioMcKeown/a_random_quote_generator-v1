@@ -35,7 +35,9 @@ source: " Kakashi Hatake,Naruto shippuden"
 
 }
 
-
+// this is setting the quote in motion by seperating the
+// quote and source in different fonts and seize
+//after that it prints it out
   function printQuote() {
   var print = getRandomQuote();
   console.log(print);
@@ -45,9 +47,11 @@ source: " Kakashi Hatake,Naruto shippuden"
   data += '<p class="source">';
   data += print.source;
   data += '</p>';
-  document.getElementById('quote-box').innerHTML = data;
+  document.getElementById('quote-box').innerHTML = data; // this is how the HTML
+  // works with the JS functions and command.
   console.log(data);
   }
 
-// when button is pressed new quotes will appear
+// when button is pressed/clicked a new quotes will appear
+// depending on the random number
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
