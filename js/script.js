@@ -40,7 +40,7 @@ source: " Kakashi Hatake,Naruto shippuden"
 //after that it prints it out
   function printQuote() {
   var print = getRandomQuote();
-  console.log(print);
+  console.log(print);  // this will output the quotes given to the randomizer.
   var data = '<p class="quote">';
   data += print.quote;
   data += '</p>';
